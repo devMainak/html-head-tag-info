@@ -5,49 +5,63 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>HTML Head Tag</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
   <header>
-    <h1>HTML Head Tag</h1>
+    <div class="container py-3">
+    <h1 class="display-1 fw-normal text-primary">HTML Head Tag</h1>
+      </div>
   </header>
-  <main>
-    <section>
-      <h2>The head Element</h2>
-      <p>The head element is a container for metadata (data about data) and is placed between the html tag and body tag.</p>
+  <main class="container">
+    <section class="py-3">
+      <h3 class="display-3 fw-normal">The head Element</h3>
+      <p class="fs-5 fw-normal">The <strong>head</strong> element is a container for metadata (data about data) and is placed between the html tag and body tag.</p>
+    </section>
+    <section class="py-3">
+      <h3 class="display-3 fw-normal">The title Element</h3>
+      <p class="fs-5 fw-normal">The <strong>title</strong> element defines the title of the document. It is shown in the browser's title bar or in a page's tab.</p>
+      <p class="fs-5 fw-normal">The page title is used by search engine algorithms to decide the order when listing pages in search results.</p>
+    </section>
+    <section class="py-3">
+      <h3 class="display-3 fw-normal">The link Element</h3>
+      <p class="fs-5 fw-normal">The <strong>link</strong> element defines the relationship between the current document and external resource. The <strong>link</strong> tag is most often used to link to external style sheets.</p>
+    </section>
+    <section class="py-3">
+      <h2 class="display-3 fw-normal">The meta Element</h2>
+      <p class="fs-5 fw-normal">The <strong>meta</strong> element is typically used to specify the character set, page description, keywords, author of the document and viewport settigs. The metadata will not be displayed on the page, but is used by browsers (how to display content), by search engines for keywords and other web services.</p>
     </section>
     <section>
-      <h2>The title Element</h2>
-      <p>The title element defines the title of the document. It is shown in the browser's title bar or in a page's tab.</p>
-      <p>The page title is used by search engine algorithms to decide the order when listing pages in search results.</p>
+      <p class="fs-5 fw-normal">Some of the meta tags are:</p>
+      <li>
+        <strong class="fs-5">Defines the character set used:</strong>
+        <p class="border border-info border-3 py-2 px-2">&lt;meta charset="UTF-8"&gt;</p>
+      </li>
+      <li>
+        <strong class="fs-5">Defines the viewport to make your website look good on all devices:</strong>
+        <p class="border border-info border-3 py-2 px-2">&lt;meta name="viewport" content="width=device-width"&gt;</p>
+      </li>
+      <li>
+        <strong class="fs-5">Defines keywords for search engines:</strong>
+        <p class="border border-info border-3 py-2 px-2">&lt;meta name="keywords" content="HTML, CSS, JavaScript"&gt;</p>
+      </li>
+      <li>
+        <strong class="fs-5">Defines the author of a web page:</strong>
+        <p class="border border-info border-3 py-2 px-2">&lt;meta name="author" content="John Doe"&gt;</p>
+      </li>
+      <li>
+        <strong class="fs-5">Define a description of your web page:</strong>
+        <p class="border border-info border-3 py-2 px-2">&lt;meta name="description" content="Information on head tag of HTML"&gt;</p>
+      </li>
     </section>
-    <section>
-      <h2>The link Element</h2>
-      <p>The link element defines the relationship between the current document and external resource. The <strong>link</strong> tag is most often used to link to external style sheets.</p>
+    <section class="py-3">
+      <h3 class="display-3 fw-normal">The style Element</h3>
+      <p class="fs-5 fw-normal">The <strong>style</strong> tag is used to define style information (CSS) for a document. Inside the <strong>style</strong> element you specify how HTML elements should render in a browser.</p>
     </section>
-    <section>
-      <h2>The meta Element</h2>
-      <p>The <strong>meta</strong> element is typically used to specify the character set, page description, keywords, author of the document and viewport settigs. The metadata will not be displayed on the page, but is used by browsers (how to display content), by search engines for keywords and other web services.</p>
-    </section>
-    <section>
-      <p>Some of the meta tags are:</p>
-      <li>
-        <strong>Defines the character set used:</strong>
-        <p>&lt;meta charset="UTF-8"&gt;</p>
-      </li>
-      <li>
-        <strong>Defines the viewport to make your website look good on all devices:</strong>
-        <p>&lt;meta name="viewport" content="width=device-width"&gt;</p>
-      </li>
-      <li>
-        <strong>Defines keywords for search engines:</strong>
-        <p>&lt;meta name="keywords" content="HTML, CSS, JavaScript"&gt;</p>
-      </li>
-      <li>
-        <strong>Defines the author of a web page:</strong>
-        <p>&lt;meta name="author" content="John Doe"&gt;</p>
-      </li>
+    <section class="py-3">
+      <h3 class="display-3 fw-normal">The script Element</h3>
+      <p class="fs-5 fw-normal">The <strong>script</strong> element is used to embed client-side script(JavaScript). The <strong>script</strong> element either contains scripting statements, or it points to an external script file through the src attribute.</p>
     </section>
   </main>
 </body>
